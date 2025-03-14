@@ -72,6 +72,10 @@ h1, h2, h3{
     margin: 0;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 p{
     line-height: 1.5;
 }
@@ -146,6 +150,14 @@ a{
     .destination-section{
         flex-direction: row;
         align-items: center;
+    }
+
+    .destination-section h2, .destination-section h3{
+        text-align: center;
+    }
+    
+    .btn-link{
+        text-align: center;
     }
     
 }
