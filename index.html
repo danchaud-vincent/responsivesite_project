@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- VIEWPORT -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <!-- GOOGLE FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,29 +13,49 @@
     </head>
     <body>
         <header>
-            <div class="hero-header-media">
+            <div class="header-container">
+                <div class="header-menu">
+                    <img class="logo-img" src="sources/images/toulouse_logo.png" alt="logo toulouse métropole">
+                    <nav class="header-menu-nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-header">
+                <div class="hero-header-media">
                     <video class="hero-header-video" autoplay muted loop>
                         <source src="sources/videos/toulouse_tour.mp4" type="video/mp4">
                     </video>
-            </div>
+                </div>
 
-            <div class="hero-header-nav container">
-                <img clas="logo-img" src="sources/images/toulouse_logo.png" alt="logo toulouse métropole">
-                <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="hero-header-headline">
+                    <h1>LA VILLE ROSE</h1>
+                </div>
+            </section>
 
-            <div class="hero-header-content container">
-                <h1>LA VILLE ROSE</h1>
-            </div>
-        </header>
-        <main>
+            <section class="destination-section container">
+                
+                <div class="destination-content">
+                    <h2>Toulouse, inattendue & conviviale</h2>
+                    <h3>VILLE DE PATRIMOINE ET TERRE D'AVENTURES</h3>
+                    <p>Expositions, concerts, festivals… la Ville rose a plein d’événements à l’affiche ! Et pour les plus gourmands, il y a toujours un nouveau restaurant à découvrir.</p>
+                    <p>Il faut prendre le temps de flâner dans les ruelles et sur les places du centre-ville pour apprécier la convivialité d’une ville du sud et voir les terrasses s’animer à toute heure de la journée. Des bords de Garonne aux monuments historiques, de la Cité de l’espace à Airbus, Toulouse surprend par ses multiples facettes.</p>
+                    <p>Le guide de voyage Lonely Planet a élu Toulouse comme la première destination urbaine à visiter en 2025. Alors n’attendez plus, destination Toulouse !</p>
+                    <a class="btn-link" href="#">TOP CITY 2025 PAR LONELY PLANET</a>
+                </div>
 
+                <img class="destination-img" src="sources/images/toulouse.jpg">
+            
+            </section>
+
+            <
         </main>
         <footer>
 

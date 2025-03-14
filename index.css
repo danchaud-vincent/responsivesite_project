@@ -1,3 +1,7 @@
+html, *{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,36 +9,144 @@ body{
 }
 
 /* LAYOUT */
-
-.container{
-    width: 90%;
-    margin: 0 auto;
+.header-container, .container{
+    padding: 1.25em;
 }
 
-header{
-    position: relative;
-}
-
-.hero-header-nav{
+.header-container{
     position: absolute;
     top: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.5);
+    border: 2px solid black;
 }
 
-.hero-header-content{
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-header{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.hero-header-media{
+    height: 100%;
+}
+
+.hero-header-headline{
     position: absolute;
-    top: 80%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-menu-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.destination-section{
+    margin-top: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 
 /* TYPOGRAPHY */
+h1, h2, h3{
+    margin: 0;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.hero-header-headline{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
 
 /* IMAGES & VIDEOS */
 .hero-header-video{
+    display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.logo-img{
+    width: 100px;
+}
+
+.destination-img{
+    width:80%;
+    border-radius: 1em;
 }
 
 /* ICONS */
 
 /* LINKS */
+a{
+    cursor: pointer;
+}
+
+.btn-link{
+    display: inline-block;
+    padding: 1em;
+    border-radius: 2em;
+    background: linear-gradient(90deg, #e30613 0%, #e71b7e 100%);;
+    color: whitesmoke;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* MEDIAS */
+
+
+@media (max-width: 767px){
+    .destination-section{
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px)  {
+    .hero-header-headline{
+        font-size: 3.75rem;
+    }
+
+    .logo-img{
+        width: 200px;
+    }
+
+    .destination-section{
+        flex-direction: row;
+    }
+
+    .destination-img{
+        width:50%;
+    }
+
+    .destination-section{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}
 
