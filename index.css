@@ -84,7 +84,7 @@ body{
     margin: 1em 0;
 }
 
-.card-img{
+.card{
     position: relative;
     overflow: hidden;
     flex-grow: 1;
@@ -183,11 +183,11 @@ p{
     filter: brightness(80%);
 }
 
-.card-img img{
+.card img{
     transition: transform .4s;
 }
 
-.card-img:hover img{
+.card:hover img{
     transform: scale(1.1);
 }
 
