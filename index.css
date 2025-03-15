@@ -9,17 +9,18 @@ body{
 }
 
 /* LAYOUT */
-.header-container, .container{
-    padding: 1.25em;
-}
-
 .header-container{
     position: absolute;
     top: 0;
     z-index: 10000;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.5);
-    border: 2px solid black;
+    background-color: rgba(245, 245, 245, 0.7);
+    padding: 0.9em 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header-menu{
@@ -39,11 +40,14 @@ body{
 }
 
 .hero-header-headline{
+    height: 100%;
     position: absolute;
     top: 0;
-    height: 100%;
-    width: 100%;
-    padding: 1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 4em;
+    
     display: flex;
     align-items: flex-end;
 }
@@ -57,34 +61,64 @@ body{
     gap: 10px;
 }
 
+.destination-section, .unmissables-section, .around-toulouse-section{
+    padding: 3em 0;
+}
 
-.destination-section{
-    margin-top: 1.25em;
+.around-toulouse-section{
+    text-align: center;
+}
+
+.destination-grid{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
+.unmissables-images, .around-toulouse-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.card-img{
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+/* BACKGROUND */
+
+.black-background{
+    background-color: black;
+}
 
 /* TYPOGRAPHY */
-h1, h2, h3{
+h1, h2, h3, p{
     margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;  
 }
 
 h2{
     font-size: 2rem;
 }
 
+h3{
+    color: #e71b7e;
+    margin: 0.625em 0;
+}
+
 p{
     line-height: 1.5;
 }
 
-.hero-header-headline{
+.light-color{
     color: whitesmoke;
-    font-size: 2rem;
 }
-
 
 /* IMAGES & VIDEOS */
 .hero-header-video{
@@ -99,11 +133,19 @@ p{
 }
 
 .destination-img{
-    width:80%;
+    width:100%;
     border-radius: 1em;
 }
 
+.unmissable-img, .around-toulouse-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ICONS */
+
+
 
 /* LINKS */
 a{
@@ -112,7 +154,8 @@ a{
 
 .btn-link{
     display: inline-block;
-    padding: 1em;
+    margin: 1em 0;
+    padding: 1em 2em;
     border-radius: 2em;
     background: linear-gradient(90deg, #e30613 0%, #e71b7e 100%);;
     color: whitesmoke;
@@ -124,39 +167,42 @@ a{
 
 
 @media (max-width: 767px){
-    .destination-section{
+    .destination-section, .unmissables-section{
         text-align: center;
     }
 }
 
 
 @media (min-width: 768px)  {
-    .hero-header-headline{
-        font-size: 3.75rem;
+
+    /* LAYOUT */
+    .destination-grid{
+        flex-direction: row;
+        align-items: center;
     }
+
+    /* TYPOGRAPHY */
+    h1{
+        font-size: 4rem;
+    }
+
+    .destination-section h2, .destination-section h3{
+        text-align: center;
+    }
+
+    /* IMAGES */
 
     .logo-img{
         width: 200px;
-    }
-
-    .destination-section{
-        flex-direction: row;
     }
 
     .destination-img{
         width:50%;
     }
 
-    .destination-section{
-        flex-direction: row;
-        align-items: center;
-    }
+    /* LINKS */
 
-    .destination-section h2, .destination-section h3{
-        text-align: center;
-    }
-    
-    .btn-link{
+    .btn-links{
         text-align: center;
     }
     
