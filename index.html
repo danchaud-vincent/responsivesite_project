@@ -3,6 +3,10 @@
     <head>
         <!-- VIEWPORT -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <!-- GOOGLE FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +22,10 @@
                     <img class="logo-img" src="sources/images/toulouse_logo.png" alt="logo toulouse métropole">
                     <nav class="header-menu-nav">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a class="nav-link"href="#hero">HOME</a></li>
+                            <li><a class="nav-link" href="#activities">ACTIVITIES</a></li>
+                            <li><a class="nav-link" href="#destination">DESTINATION</a></li>
+                            <li><a class="nav-link" href="#footer">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -28,7 +33,7 @@
         </header>
 
         <main>
-            <section class="hero-header">
+            <section class="hero-header" id="hero">
                 <div class="hero-header-media">
                     <video class="hero-header-video" autoplay muted loop>
                         <source src="sources/videos/toulouse_tour.mp4" type="video/mp4">
@@ -50,7 +55,9 @@
                         <p>Le guide de voyage Lonely Planet a élu Toulouse comme la première destination urbaine à visiter en 2025. Alors n’attendez plus, destination Toulouse !</p>
                         
                         <div class="btn-links">
-                            <a class="btn-link" href="#">TOP CITY 2025 PAR LONELY PLANET</a>
+                            <a class="btn-link" href="#">
+                                TOP CITY 2025 PAR LONELY PLANET
+                            </a>
                         </div>
                     </div>
     
@@ -58,7 +65,7 @@
                 </div>
             </section>
 
-            <section class="unmissables-section black-background">
+            <section id="activities" class="unmissables-section black-background">
                 <div class="container">
                     <div class="unmissables-content">
                         <h2 class="light-color">Les incontournables</h2>
@@ -69,7 +76,10 @@
                     <div class="unmissables-images">
                         <div class="card-img">
                             <img class="unmissable-img" src="sources/images/capitole.jpg">
-                       
+                            
+                            <div class="card-content">
+                                <p>Capitole</p>
+                            </div>
                         </div>
 
                         <div class="card-img">
@@ -83,7 +93,7 @@
                 </div>
             </section>
 
-            <section class="around-toulouse-section">
+            <section id="destination" class="around-toulouse-section">
                 <div class="container">
                     <h2>Autour de toulouse</h2>
 
@@ -104,8 +114,17 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <h2>FOOTER</h2>
+        <footer id="footer" class="black-background">
+            <div class="container">
+                <h2 class="light-color">CONTACT</h2>
+                
+                <div class="contact">
+                    <a class="contact-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="contact-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="contact-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="contact-link" href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

@@ -10,11 +10,11 @@ body{
 
 /* LAYOUT */
 .header-container{
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10000;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgba(245, 245, 245, 0.9);
     padding: 0.9em 0;
 }
 
@@ -53,6 +53,7 @@ body{
 }
 
 .header-menu-nav ul{
+    font-size: 0.8rem;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -84,9 +85,36 @@ body{
 }
 
 .card-img{
+    position: relative;
     flex-grow: 1;
     flex-basis: 400px;
 }
+
+.card-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    padding: 4em;
+}
+
+footer{
+    padding: 3em 0;
+    text-align: center;
+}
+
+.contact{
+    margin-top: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
 
 /* BACKGROUND */
 
@@ -129,7 +157,7 @@ p{
 }
 
 .logo-img{
-    width: 100px;
+    width: 80px;
 }
 
 .destination-img{
@@ -145,11 +173,31 @@ p{
 
 /* ICONS */
 
-
+i{
+    font-size: 2em;
+}
 
 /* LINKS */
 a{
     cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link{
+    font-weight: 600;
+    color: black;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active{
+    color: #e71b7e;
+}
+
+.contact-link{
+    color: #e71b7e;
+}
+
+.contact-link:hover, .contact-link:focus, .contact-link:active{
+    color: whitesmoke;
 }
 
 .btn-link{
@@ -161,6 +209,11 @@ a{
     color: whitesmoke;
     font-weight: 800;
     text-decoration: none;
+}
+
+.btn-link:hover{
+    background: black;
+    color: #e71b7e;
 }
 
 /* MEDIAS */
@@ -190,10 +243,14 @@ a{
         text-align: center;
     }
 
+    .header-menu-nav ul{
+        font-size: 1rem;
+    }
+
     /* IMAGES */
 
     .logo-img{
-        width: 200px;
+        width: 150px;
     }
 
     .destination-img{
