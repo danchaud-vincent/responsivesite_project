@@ -8,7 +8,15 @@ body{
     font-family: "Figtree", sans-serif;
 }
 
-/* LAYOUT */
+/* BACKGROUND */
+.black-background{
+    background-color: black;
+}
+
+/* =================
+    LAYOUTS
+   ================= */
+/* CONTAINER */
 .header-container{
     position: fixed;
     top: 0;
@@ -23,6 +31,7 @@ body{
     margin: 0 auto;
 }
 
+/* HEADER */
 .header-menu{
     display: flex;
     align-items: center;
@@ -62,6 +71,8 @@ body{
     gap: 10px;
 }
 
+
+/* SECTIONS */
 .destination-section, .unmissables-section, .around-toulouse-section{
     padding: 3em 0;
 }
@@ -84,6 +95,7 @@ body{
     margin: 1em 0;
 }
 
+/* CARD */
 .card{
     position: relative;
     overflow: hidden;
@@ -102,6 +114,7 @@ body{
     padding: 1em;
 }
 
+/* FOOTER */
 footer{
     padding: 3em 0;
     text-align: center;
@@ -117,13 +130,9 @@ footer{
 }
 
 
-/* BACKGROUND */
-
-.black-background{
-    background-color: black;
-}
-
-/* TYPOGRAPHY */
+/* =================
+    TYPOGRAPHY
+   ================= */
 h1, h2, h3, p{
     margin: 0;
 }
@@ -155,7 +164,9 @@ p{
     color: whitesmoke;
 }
 
-/* IMAGES & VIDEOS */
+/* =================
+    IMAGES & VIDEOS
+   ================= */
 .hero-header-video{
     display: block;
     width: 100%;
@@ -191,13 +202,17 @@ p{
     transform: scale(1.1);
 }
 
-/* ICONS */
+/* =================
+    ICONS
+   ================= */
 
 i{
     font-size: 2rem;
 }
 
-/* LINKS */
+/* =================
+    LINKS
+   ================= */
 a{
     cursor: pointer;
     text-decoration: none;
@@ -236,8 +251,9 @@ a{
     color: #e71b7e;
 }
 
-/* MEDIAS */
-
+/* =================
+    MEDIA QUERIES
+   ================= */
 
 @media (max-width: 767px){
     .destination-section, .unmissables-section{
